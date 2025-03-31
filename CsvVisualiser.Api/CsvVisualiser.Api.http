@@ -1,0 +1,6 @@
+@CsvVisualiser.Api_HostAddress = http://localhost:5211
+
+GET {{CsvVisualiser.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

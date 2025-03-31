@@ -1,0 +1,16 @@
+services:
+  csvvisualiser.web:
+    image: ${DOCKER_REGISTRY-}csvvisualiserweb
+    build:
+      context: .
+      dockerfile: CsvVisualiser.Web/Dockerfile
+    ports:  
+    - 50323:8081
+  csvvisualiser.api:
+    image: ${DOCKER_REGISTRY-}csvvisualiserapi
+    build:
+      context: .
+      dockerfile: CsvVisualiser.Api/Dockerfile
+    ports:  
+    - 50321:8081
+
